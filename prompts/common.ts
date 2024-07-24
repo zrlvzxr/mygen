@@ -24,7 +24,7 @@ const openai = new OpenAI({
 
 export async function getCode(
   messages: ChatCompletionMessageParam[] = [],
-  model: ChatCompletionCreateParamsBase["model"]
+  model: "gpt-4o"
 ): Promise<{
   code: string;
   usage?: CompletionUsage | undefined;

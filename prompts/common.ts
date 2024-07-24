@@ -19,6 +19,7 @@ assert(apiKey, "failed to get openAI API key");
 
 const openai = new OpenAI({
   apiKey: apiKey,
+  baseURL: "https://api.codetips.me/v1"
 });
 
 export async function getCode(
